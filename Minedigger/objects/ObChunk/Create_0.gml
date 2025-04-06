@@ -31,25 +31,45 @@ generate_terrain = function(){
 	}
 }
 generate_fill = function(_ores = 2){
+	var _shop = false;
 	for(var i = 0; i < CHUNKW; i++){
 		for(var j = 0; j < CHUNKH; j++){
 			tilemap_set(global.BlocksLayerTilemap, 1 + (i % 3), ChunkX * CHUNKW + i, y div BS + j);
 			tilemap_set(global.BacksLayerTilemap, 5 + (i % 3), ChunkX * CHUNKW + i, y div BS + j);
+			
+			if (((y div BS) + j) % 100 == 0 && i == 1){
+				_shop = true;
+			}
 		}
 	}
-	
+	if (_shop){
+		if (ChunkX){
+			struct_generate(8);
+		}
+		exit;
+	}
 	repeat(_ores){
-		var _x = irandom(CHUNKW);
-		var _y = irandom(CHUNKH);
+		var _ore = choose(Ore.Emerald, Ore.Emerald, Ore.Emerald, Ore.Emerald, Ore.Diamond, Ore.Diamond, Ore.Gold);
+		var _x = irandom(CHUNKW) / (_ore == Ore.Gold ? 2 : 1);
+		var _y = irandom(CHUNKH) / (_ore == Ore.Gold ? 2 : 1);
 		
 		for(var i = 0; i < irandom(CHUNKW); i++){
 			for(var j = 0; j < irandom(CHUNKH); j++){
 				_x += irandom_range(-1, 1);
 				_y += irandom_range(-1, 1);
-				tilemap_set(global.BlocksLayerTilemap, choose(11, 11, 11, 21) + (i % 3), ChunkX * CHUNKW + _x, y div BS + _y);
+				tilemap_set(global.BlocksLayerTilemap, choose(_ore, _ore, _ore, _ore + 10) + (i % 3), ChunkX * CHUNKW + _x, y div BS + _y);
 			}
 		}
 		
+	}
+}
+struct_generate = function(_y, _struct = ObChunkController.ShopStructure, _back = ObChunkController.ShopStructureBack){
+	for(var i = 0; i < array_length(_struct); i++){
+		for(var j = 0; j < array_length(_struct[i]); j++){
+			tilemap_set(global.BlocksLayerTilemap, _struct[i][j], ChunkX * CHUNKW + j, y div BS + i + _y);
+			tilemap_set(global.BacksLayerTilemap, _back[i][j], ChunkX * CHUNKW + j, y div BS + i + _y);
+			tilemap_set(global.BombsLayerTilemap, 0, ChunkX * CHUNKW + j, y div BS + i + _y);
+		}
 	}
 }
 save = function(){
