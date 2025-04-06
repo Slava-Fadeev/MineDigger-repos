@@ -8,10 +8,14 @@ for(var i = 0; i < 2; i++){
 	}
 }
 
+var a = irandom_range(Ore.ShopHeart, Ore.ShopDiffuser);
+var b = irandom_range(Ore.ShopHeart, Ore.ShopDiffuser);
+var c = irandom_range(Ore.ShopHeart, Ore.ShopDiffuser);
+
 ShopStructure = [
 [41,42,43,41,42,43,41,42,43,41,42,43,41,42,43,41],
 [41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,41],
-[41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,41],
+[41, 0, 0, 0, 0, 0, 0, 0, a, 0, b, 0, c, 0, 0,41],
 [41, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,41],
 [41,42,43,41,42,43,41,42,43,41,42,43,41,42,43,41]
 ];

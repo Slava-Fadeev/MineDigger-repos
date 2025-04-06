@@ -1,0 +1,3 @@
+// Scanner off
+
+ScannerActive = false;

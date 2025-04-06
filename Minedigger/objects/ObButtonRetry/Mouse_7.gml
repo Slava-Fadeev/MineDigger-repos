@@ -1,0 +1,1 @@
+instance_create_depth(x - 500, room_height / 2, -10000, ObTransition)
