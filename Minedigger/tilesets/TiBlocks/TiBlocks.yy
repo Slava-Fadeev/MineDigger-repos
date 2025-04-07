@@ -8,7 +8,7 @@
     "TileSerialiseData":[],
   },
   "name":"TiBlocks",
-  "out_columns":17,
+  "out_columns":10,
   "out_tilehborder":2,
   "out_tilevborder":2,
   "parent":{
@@ -34,5 +34,5 @@
   "tileWidth":12,
   "tilexoff":0,
   "tileyoff":0,
-  "tile_count":300,
+  "tile_count":100,
 }

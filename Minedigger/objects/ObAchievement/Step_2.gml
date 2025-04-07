@@ -16,21 +16,9 @@ if (Emeralds % 50 == 0 && Emeralds > LastEmeralds){
 	LastEmeralds += 50;
 	exit;
 }
-if (Golds % 50 == 0 && Golds > LastGolds){
+if (Gold % 50 == 0 && Gold > LastGold){
 	Achievement = "Golds";
 	alarm[0] = 300;
-	LastGolds += 50;
-	exit;
-}
-if (Vases % 25 == 0 && Vases > LastVases){
-	Achievement = "Vases";
-	alarm[0] = 200;
-	LastVases += 25;
-	exit;
-}
-if (Blocks % 500 == 0 && Blocks > LastBlocks){
-	Achievement = "Blocks";
-	alarm[0] = 300;
-	LastBlocks += 500;
+	LastGold += 50;
 	exit;
 }

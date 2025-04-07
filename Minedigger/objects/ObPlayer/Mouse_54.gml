@@ -40,14 +40,4 @@ switch(_tile){
 			particles(_x, _y, 8, [c_dblue, c_lred]);
 		}
 	break;
-	case Ore.ShopBinoculars:
-		if(buy(Ore.ShopBinoculars, Prices[EPrices.Binoculars] + _depth_penalty)){
-			particles(_x, _y, 8, [c_lgray, c_lgray, c_dgray, c_mwhite]);
-		}
-	break;
-	case Ore.ShopMineDetect:
-		if(buy(Ore.ShopMineDetect, Prices[EPrices.MineDetect] + _depth_penalty)){
-			particles(_x, _y, 8, [c_dblue, c_lred, c_lgray, c_dgray]);
-		}
-	break;
 }

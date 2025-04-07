@@ -14,11 +14,6 @@
 #macro c_wcblue	#4B4158
 #macro c_lred		#B45252
 #macro c_mwhite	#F2F0E5
-#macro c_plank		#D3A068
-#macro c_dplank	#A77B5B
-#macro c_ddplank	#80493A
-#macro c_lgray		#45444F
-#macro c_dgray		#212123
 
 enum Ore{ // ID in tilemap
 	Emerald			= 11,
@@ -54,19 +49,5 @@ enum Ore{ // ID in tilemap
 	ShopScan			= 72,
 	ShopScanPlus	= 73,
 	ShopMedkit		= 74,
-	ShopDiffuser	= 75,
-	ShopBinoculars = 76,
-	ShopMineDetect = 77,
-	
-	Plank				= 101,
-	Vase				= 111
-	
-	
-}
-
-enum Biome{
-	Standart			= 0,
-	StandartBack	= 0,
-	Sandbiome		= 120,
-	SandbiomeBack	= 28
+	ShopDiffuser	= 75
 }

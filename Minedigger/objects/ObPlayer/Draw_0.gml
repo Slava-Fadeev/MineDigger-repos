@@ -1,7 +1,7 @@
 draw_sprite_ext(SpLight, 0, x, y, image_xscale, 1, 0, c_white, sin(current_time / 800) - 0.75);
 
-var _min = 1; // 9
-var _max = 2; // 11 (glasses)
+var _min = 1;
+var _max = 2;
 
 if (ScannerActive){
 	_min = ScannerRadius - 1;
@@ -53,7 +53,7 @@ draw_sprite(SpSelect, 0, BS / 2 + (x + _x) div BS * BS, BS / 2 + (y + _y) div BS
 draw_set_alpha(1);
 
 var _tile = tilemap_get_at_pixel(global.BlocksLayerTilemap, x + _x, y + _y);
-if (_tile >= Ore.ShopHeart && _tile <= Ore.ShopMineDetect){
+if (_tile >= Ore.ShopHeart && _tile <= Ore.ShopDiffuser){
 	draw_sprite(SpDescriptions, _tile - 70, BS / 2 + (x + _x) div BS * BS, BS / 2 + (y + _y) div BS * BS);
 	
 	draw_set_font(global.FontShop);
