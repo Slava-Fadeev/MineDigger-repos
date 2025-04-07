@@ -33,8 +33,8 @@ if place_meeting(x, y - 1, [global.BlocksLayerTilemap, ObEndBlock]){
 	YSpeed = 1;
 }
 
-x = round(x);
-y = round(y);
+//x = round(x);
+//y = round(y);
 
 Depth = (ystart - y) div BS;
 
