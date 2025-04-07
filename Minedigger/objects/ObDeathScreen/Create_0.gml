@@ -1,8 +1,8 @@
 Depth = ObPlayer.Depth;
 Money = ObPlayer.Money;
-audio_play_sound(mus_bombed, 12, true, 0);
+bombed = audio_play_sound(mus_bombed, 12, true, 0);
 
-audio_sound_gain(mus_bombed, 0.5, 1500);
+audio_sound_gain(bombed, 1, 1500);
 audio_sound_gain(mus_cave, 0, 1500);
 audio_sound_gain(mus_shop, 0, 1500);
 

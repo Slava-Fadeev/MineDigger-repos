@@ -7,5 +7,5 @@ if room = RmGame{
 	audio_sound_gain(global.musCave,0,0)
 	audio_sound_gain(global.mus,0,1500)
 	audio_sound_gain(global.musShop,0,0)
-	alarm[0] = 1
+	alarm[0] = 30
 }
