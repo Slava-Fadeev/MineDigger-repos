@@ -15,7 +15,7 @@ XSpeed = 0;
 
 Money = 0;
 Depth = 0;
-Health = 300;
+Health = 3;
 
 particles = function(_x, _y, _count, _particles_colors){
 	repeat(_count){

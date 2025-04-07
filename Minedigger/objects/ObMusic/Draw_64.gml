@@ -1,0 +1,1 @@
+draw_text(40,40,string(audio_is_playing(mus_cave)))

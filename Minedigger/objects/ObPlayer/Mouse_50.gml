@@ -4,7 +4,7 @@ var _x = x + lengthdir_x(BS, _dir);
 var _y = y + lengthdir_y(BS, _dir);
 
 if (DigFrame % 10 != 0){
-	//exit;
+	exit;
 }
 
 var _tile = tilemap_get_at_pixel(global.BlocksLayerTilemap, _x, _y);
