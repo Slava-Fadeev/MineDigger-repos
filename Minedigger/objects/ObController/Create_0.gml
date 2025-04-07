@@ -5,7 +5,7 @@ global.FontDepth = font_add_sprite_ext(SpDepthNumbers, "0123456789M", true, 1);
 global.FontMoney = font_add_sprite_ext(SpMoneyNumbers, "0123456789M", true, 1);
 global.FontInventory = font_add_sprite_ext(SpInventoryNumbers, "012", true, 1);
 global.FontShop = font_add_sprite_ext(SpShopNumbers, "0123456789M", true, 1);
-global.FontDeath = font_add_sprite_ext(SpShopNumbers, "0123456789MD", true, 1);
+global.FontDeath = font_add_sprite_ext(SpDeathNumbers, "0123456789MDbest:/", true, 1);
 global.Font = font_add_sprite_ext(SpFont, "abcdefghijklmnopqrstuvwxyz0123456789", true, 1);
 
 global.BombsLayer				= layer_create(-1);

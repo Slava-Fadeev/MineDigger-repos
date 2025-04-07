@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"mus_bombed",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":1,
+  "conversionMode":0,
+  "duration":88.32,
+  "name":"mus_bombed",
+  "parent":{
+    "name":"Sounds",
+    "path":"folders/Sounds.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"mus_bombed.mp3",
+  "type":0,
+  "volume":1.0,
+}

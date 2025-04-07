@@ -18,6 +18,7 @@ if (End){
 		image_xscale -= 0.1;
 		image_yscale -= 0.1;
 		Back = true;
+		audio_play_sound(snd_tutorial_close, 13, false, random_range(0.05, 0.1), 0.15, random_range(0.8, 1.2));
 	}
 	
 	if (image_xscale <= 0){

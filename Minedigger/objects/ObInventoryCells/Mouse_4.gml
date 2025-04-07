@@ -13,6 +13,7 @@ switch(Items[_cell]){
 		if (ObPlayer.Health < 3){
 			_do_minus = true;
 			ObPlayer.Health ++;
+			
 		}
 	break;
 	case 2:
@@ -67,4 +68,6 @@ if (_do_minus){
 	if (Stacks[_cell] <= 0){
 		Items[_cell] = 0;
 	}
+	
+	audio_play_sound(snd_item_use, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 }

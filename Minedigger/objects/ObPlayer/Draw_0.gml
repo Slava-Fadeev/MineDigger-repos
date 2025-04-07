@@ -1,3 +1,5 @@
+draw_set_alpha(DrawAlpha);
+
 draw_sprite_ext(SpLight, 0, x, y, image_xscale, 1, 0, c_white, sin(current_time / 800) - 0.75);
 
 var _min = 1;
@@ -30,9 +32,9 @@ for(var i = -_min; i < _max; i++){
 			}
 		
 			if (_number){
-				draw_set_alpha(0.75);
+				draw_set_alpha(0.75 * DrawAlpha);
 				if (i == 0 && j == 0){
-					draw_set_alpha(0.25);
+					draw_set_alpha(0.25 * DrawAlpha);
 				}
 			
 				draw_sprite(SpNumbers, _number, (x + i * BS) div BS * BS + BS / 2, (y + j * BS) div BS * BS + BS / 2);
@@ -53,9 +55,9 @@ var _x = lengthdir_x(BS, _dir);
 var _y = lengthdir_y(BS, _dir);
 
 
-draw_set_alpha(0.55);
+draw_set_alpha(0.55 * DrawAlpha);
 draw_sprite(SpSelect, 0, BS / 2 + (x + _x) div BS * BS, BS / 2 + (y + _y) div BS * BS);
-draw_set_alpha(1);
+draw_set_alpha(1 * DrawAlpha);
 
 var _tile = tilemap_get_at_pixel(global.BlocksLayerTilemap, x + _x, y + _y);
 if (_tile >= Ore.ShopHeart && _tile <= Ore.ShopMineDetect){
@@ -66,3 +68,5 @@ if (_tile >= Ore.ShopHeart && _tile <= Ore.ShopMineDetect){
 	draw_text(BS / 2 + (x + _x) div BS * BS + 4, BS / 2 + (y + _y) div BS * BS - 8, string(Prices[_tile - 71]) + "M");
 	draw_set_halign(fa_left);
 }
+
+draw_set_alpha(1);

@@ -4,3 +4,4 @@ var _y = camera_get_view_y(_cam);
 
 x = _x;
 y = _y;
+image_alpha += 0.15;

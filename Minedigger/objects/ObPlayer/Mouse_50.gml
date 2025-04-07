@@ -15,11 +15,15 @@ if (_bomb){
 	Health -= 1;
 	HeartLoss = true;
 	instance_create_depth(_x, _y, -12, ObExplode);
+	
+	audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 }
 
 if (!_tile || (_tile >= Ore.ShopHeart && _tile <= Ore.ShopDiffuser)){
 	exit;
 }
+
+audio_play_sound(snd_dig, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 
 image_index = 0;
 sprite_index = SpPlayerDigRight;
@@ -35,6 +39,17 @@ switch(_tile){
 		ObAchievement.Emeralds ++;
 		Money += 4;
 		particles(_x, _y, 5, [c_emerald, c_emerald2]);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Ore.Emerald  + Biome.Sandbiome:
+	case Ore.Emerald2 + Biome.Sandbiome:
+	case Ore.Emerald3 + Biome.Sandbiome:
+		ObAchievement.Emeralds ++;
+		Money += 4;
+		particles(_x, _y, 5, [c_emerald, c_emerald2, c_lyellow, c_dyellow, c_lred]);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 	break;
 	case Ore.Diamond:
 	case Ore.Diamond2:
@@ -42,6 +57,17 @@ switch(_tile){
 		ObAchievement.Diamonds ++;
 		Money += 16;
 		particles(_x, _y, 7, [c_diamond, c_diamond2, c_dirt]);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Ore.Diamond  + Biome.Sandbiome:
+	case Ore.Diamond2 + Biome.Sandbiome:
+	case Ore.Diamond3 + Biome.Sandbiome:
+		ObAchievement.Diamonds ++;
+		Money += 16;
+		particles(_x, _y, 7, [c_diamond, c_diamond2, c_lyellow, c_dyellow, c_lred]);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 	break;
 	case Ore.DiamondFake:
 	case Ore.DiamondFake2:
@@ -50,6 +76,18 @@ switch(_tile){
 		HeartLoss = true;
 		instance_create_depth(_x, _y, -12, ObExplode);
 		particles(_x, _y, 7, [c_diamond, c_diamond2, c_diamond2, c_dirt]);
+		
+		audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Ore.DiamondFake  + Biome.Sandbiome:
+	case Ore.DiamondFake2 + Biome.Sandbiome:
+	case Ore.DiamondFake3 + Biome.Sandbiome:
+		Health -= 1;
+		HeartLoss = true;
+		instance_create_depth(_x, _y, -12, ObExplode);
+		particles(_x, _y, 7, [c_diamond, c_diamond2, c_diamond2, c_lyellow, c_dyellow, c_lred]);
+		
+		audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 	break;
 	case Ore.Gold:
 	case Ore.Gold2:
@@ -57,6 +95,17 @@ switch(_tile){
 		ObAchievement.Golds ++;
 		Money += 33;
 		particles(_x, _y, 7, [c_dyellow, c_lyellow, c_dblue, c_lblue]);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Ore.Gold  + Biome.Sandbiome:
+	case Ore.Gold2 + Biome.Sandbiome:
+	case Ore.Gold3 + Biome.Sandbiome:
+		ObAchievement.Golds ++;
+		Money += 33;
+		particles(_x, _y, 7, [c_dyellow, c_lyellow, c_lyellow, c_dyellow, c_lred]);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 	break;
 	case Ore.GoldFake:
 	case Ore.GoldFake2:
@@ -65,6 +114,18 @@ switch(_tile){
 		HeartLoss = true;
 		instance_create_depth(_x, _y, -12, ObExplode);
 		particles(_x, _y, 7, [c_dyellow, c_lyellow, c_dblue, c_lblue]);
+		
+		audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Ore.GoldFake  + Biome.Sandbiome:
+	case Ore.GoldFake2 + Biome.Sandbiome:
+	case Ore.GoldFake3 + Biome.Sandbiome:
+		Health -= 1;
+		HeartLoss = true;
+		instance_create_depth(_x, _y, -12, ObExplode);
+		particles(_x, _y, 7, [c_dyellow, c_lyellow, c_lyellow, c_dyellow, c_lred]);
+		
+		audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 	break;
 	case Ore.DirtWithGrass:
 	case Ore.DirtWithGrass2:
@@ -79,6 +140,19 @@ switch(_tile){
 		HeartLoss = true;
 		instance_create_depth(_x, _y, -12, ObExplode);
 		particles(_x, _y, 8, [c_emerald, c_emerald, c_emerald2]);
+		
+		audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Ore.EmeraldFake  + Biome.Sandbiome:
+	case Ore.EmeraldFake2 + Biome.Sandbiome:
+	case Ore.EmeraldFake3 + Biome.Sandbiome:
+		Money += 3;
+		Health -= 1;
+		HeartLoss = true;
+		instance_create_depth(_x, _y, -12, ObExplode);
+		particles(_x, _y, 8, [c_emerald, c_emerald, c_emerald2, c_lyellow, c_dyellow, c_lred]);
+		
+		audio_play_sound(snd_explode, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
 	break;
 	
 	case Ore.ShopBlock:
@@ -101,6 +175,13 @@ switch(_tile){
 		Money += _temp;
 		particles(_x, _y, 8, [c_plank, c_dblue, c_ddplank]);
 		particles(_x, _y, 4, _temp <= 15 ? _emerald_particles : _diamonds_particles);
+		
+		audio_play_sound(snd_ore, 13, false, random_range(0.1, 0.2), 0, random_range(0.7, 1.3));
+	break;
+	case Biome.Sandbiome + 1:
+	case Biome.Sandbiome + 2:
+	case Biome.Sandbiome + 3:
+		particles(_x, _y, 3, [c_plank, c_dplank, c_lred]);
 	break;
 	default:
 		particles(_x, _y, 3, [c_dirt]);

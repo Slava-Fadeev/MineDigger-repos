@@ -2,10 +2,10 @@
   "$GMSprite":"",
   "%Name":"SpDeathNumbers",
   "bboxMode":0,
-  "bbox_bottom":7,
+  "bbox_bottom":8,
   "bbox_left":0,
   "bbox_right":7,
-  "bbox_top":0,
+  "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -24,10 +24,16 @@
     {"$GMSpriteFrame":"","%Name":"fcba9343-b6ba-4f90-8cc5-94264b158f35","name":"fcba9343-b6ba-4f90-8cc5-94264b158f35","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"b30679b3-c91f-4414-853f-7519865192c1","name":"b30679b3-c91f-4414-853f-7519865192c1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
     {"$GMSpriteFrame":"","%Name":"38f48be4-58e8-4d28-b3d2-999c3b0455e0","name":"38f48be4-58e8-4d28-b3d2-999c3b0455e0","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5d096681-7bdf-4f6e-aa93-f87472605c79","name":"5d096681-7bdf-4f6e-aa93-f87472605c79","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"07be2204-7cea-450f-832c-a1de6f8c54d7","name":"07be2204-7cea-450f-832c-a1de6f8c54d7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a577ae2e-70ad-4210-a01d-5ecb2fd7001a","name":"a577ae2e-70ad-4210-a01d-5ecb2fd7001a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c06387c1-c873-40b7-8ed5-16c71ef09b47","name":"c06387c1-c873-40b7-8ed5-16c71ef09b47","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"7e6fa7ef-b46b-416e-9afd-4d69cd6c5a7b","name":"7e6fa7ef-b46b-416e-9afd-4d69cd6c5a7b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"03fe5e0f-1b13-4d53-ad62-af9c130c6192","name":"03fe5e0f-1b13-4d53-ad62-af9c130c6192","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":8,
+  "height":9,
   "HTile":false,
   "layers":[
     {"$GMImageLayer":"","%Name":"4123e7b1-6257-42e9-8b81-e1d6b9e03213","blendMode":0,"displayName":"default","isLocked":false,"name":"4123e7b1-6257-42e9-8b81-e1d6b9e03213","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
@@ -60,7 +66,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":12.0,
+    "length":18.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -115,6 +121,24 @@
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"38f48be4-58e8-4d28-b3d2-999c3b0455e0","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"9a35f61f-450e-428d-b0dd-a5b367bc2708","IsCreationKey":false,"Key":11.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5d096681-7bdf-4f6e-aa93-f87472605c79","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7df27bb7-a271-4f3b-aa87-e99375f9a5ef","IsCreationKey":false,"Key":12.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"07be2204-7cea-450f-832c-a1de6f8c54d7","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fc64da20-3f31-4343-96c7-a2161727f92c","IsCreationKey":false,"Key":13.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a577ae2e-70ad-4210-a01d-5ecb2fd7001a","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"65f09ead-ea9f-419b-9813-46b2662354d7","IsCreationKey":false,"Key":14.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c06387c1-c873-40b7-8ed5-16c71ef09b47","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"9aae2582-f2eb-438e-9e39-62c820c6481c","IsCreationKey":false,"Key":15.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"7e6fa7ef-b46b-416e-9afd-4d69cd6c5a7b","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"36a64614-9d1d-4fcf-b70c-73422a4c31af","IsCreationKey":false,"Key":16.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"03fe5e0f-1b13-4d53-ad62-af9c130c6192","path":"sprites/SpDeathNumbers/SpDeathNumbers.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5f068a13-9176-403a-9fff-982580970709","IsCreationKey":false,"Key":17.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

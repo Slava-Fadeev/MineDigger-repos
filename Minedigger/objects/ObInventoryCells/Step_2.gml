@@ -1,3 +1,7 @@
+if (!instance_exists(ObPlayer)){
+	exit;
+}
+
 var _cam = view_camera[0];
 var _w = camera_get_view_width(_cam) / 2;
 var _h = camera_get_view_height(_cam) / 2;

@@ -1,3 +1,7 @@
+if (Health <= 0){
+	draw_set_alpha(DrawAlpha);
+}
+
 for(var i = 0; i < 3; i++){
 	draw_sprite(SpHeart, i >= Health, (camera_get_view_width(view_camera[0]) / 2) - 20 + 8 + 13 * i, 7);
 }
@@ -20,3 +24,5 @@ draw_set_halign(fa_right);
 
 draw_text(camera_get_view_width(view_camera[0]) + 5, 6, string(Money) + "M");
 draw_set_halign(fa_left);
+
+draw_set_alpha(1);

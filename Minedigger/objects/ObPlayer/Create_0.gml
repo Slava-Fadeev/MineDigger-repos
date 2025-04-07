@@ -16,6 +16,7 @@ XSpeed = 0;
 Money = 0;
 Depth = 0;
 Health = 3;
+
 BinocularsActive = false;
 DetectorActive = false;
 particles = function(_x, _y, _count, _particles_colors){
@@ -29,6 +30,8 @@ buy = function(_item, _price){
 		exit;
 	}
 	Money -= _price;
+	
+	audio_play_sound(snd_buy, 13, false, random_range(0.04, 0.1), 0, random_range(0.7, 1.3));
 	
 	for(var i = 0; i < array_length(ObInventoryCells.Items); i++){
 		if (ObInventoryCells.Items[i] == _item - 70){
@@ -64,3 +67,5 @@ enum EPrices{
 	Binoculars,
 	MineDetect
 }
+
+DrawAlpha = 1;
