@@ -1,4 +1,4 @@
-Items = [2, 3, 0, 0];
+Items = [6, 7, 0, 0];
 Stacks= [2, 2, 0, 0];
 StackM= 2;
 

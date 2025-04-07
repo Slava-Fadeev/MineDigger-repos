@@ -1,13 +1,18 @@
 draw_sprite_ext(SpLight, 0, x, y, image_xscale, 1, 0, c_white, sin(current_time / 800) - 0.75);
 
-var _min = 1; // 9
-var _max = 2; // 11 (glasses)
+var _min = 1;
+var _max = 2;
 
 if (ScannerActive){
 	_min = ScannerRadius - 1;
 	_max = ScannerRadius;
 	
 	draw_sprite(SpScannerWork, current_time / 100, x, y);
+}
+
+if (DetectorActive){
+	_min = 11;
+	_max = 11;
 }
 
 for(var i = -_min; i < _max; i++){

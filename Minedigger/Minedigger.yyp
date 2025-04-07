@@ -59,6 +59,9 @@
     {"id":{"name":"ShColorize","path":"shaders/ShColorize/ShColorize.yy",},},
     {"id":{"name":"ShColorizeWA","path":"shaders/ShColorizeWA/ShColorizeWA.yy",},},
     {"id":{"name":"ShWaveColorize","path":"shaders/ShWaveColorize/ShWaveColorize.yy",},},
+    {"id":{"name":"mus_cave","path":"sounds/mus_cave/mus_cave.yy",},},
+    {"id":{"name":"mus_menu","path":"sounds/mus_menu/mus_menu.yy",},},
+    {"id":{"name":"mus_shop","path":"sounds/mus_shop/mus_shop.yy",},},
     {"id":{"name":"SpBack","path":"sprites/SpBack/SpBack.yy",},},
     {"id":{"name":"SpBlockParticle","path":"sprites/SpBlockParticle/SpBlockParticle.yy",},},
     {"id":{"name":"SpButtonSelect","path":"sprites/SpButtonSelect/SpButtonSelect.yy",},},
@@ -108,8 +111,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"RmGame","path":"rooms/RmGame/RmGame.yy",},},
     {"roomId":{"name":"RmMenu","path":"rooms/RmMenu/RmMenu.yy",},},
+    {"roomId":{"name":"RmGame","path":"rooms/RmGame/RmGame.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

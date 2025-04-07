@@ -33,18 +33,13 @@ if place_meeting(x, y - 1, [global.BlocksLayerTilemap, ObEndBlock]){
 	YSpeed = 1;
 }
 
-//x = round(x);
-//y = round(y);
-
 Depth = (ystart - y) div BS;
 
-if (x != xprevious || y != yprevious){
-	var _cam = view_camera[0];
-	var _w = camera_get_view_width(_cam) / 2;
-	var _h = camera_get_view_height(_cam) / 2;
-	
-	camera_set_view_pos(_cam, x - _w + BS - 12, y - _h + 8);
-}
+var _cam = view_camera[0];
+var _w = camera_get_view_width(_cam) / 2;
+var _h = camera_get_view_height(_cam) / 2;
+
+camera_set_view_pos(_cam, x - _w + BS - 12, y - _h + 8);
 
 if (Health <= 0){
 	instance_create_depth(x, y, -999, ObDeathScreen);

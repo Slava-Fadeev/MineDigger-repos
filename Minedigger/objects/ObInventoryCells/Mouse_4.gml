@@ -45,6 +45,21 @@ switch(Items[_cell]){
 		}
 		
 	break;
+	case 6:
+		_do_minus = true;
+		ObPlayer.BinocularsActive = true;
+		ObPlayer.alarm[1] = 1200;
+		
+		camera_set_view_size(view_camera[0], 192 + 64, 108 + 36);
+		surface_resize(application_surface, 192 + 64, 108 + 36);
+		
+	break;
+	case 7:
+		_do_minus = true;
+		ObPlayer.DetectorActive = true;
+		ObPlayer.alarm[2] = 600;
+		
+	break;
 }
 
 if (_do_minus){

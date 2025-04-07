@@ -15,8 +15,9 @@ XSpeed = 0;
 
 Money = 0;
 Depth = 0;
-Health = 300;
-
+Health = 3;
+BinocularsActive = false;
+DetectorActive = false;
 particles = function(_x, _y, _count, _particles_colors){
 	repeat(_count){
 		var _part = instance_create_depth(_x, _y, - 13, ObParticle);
