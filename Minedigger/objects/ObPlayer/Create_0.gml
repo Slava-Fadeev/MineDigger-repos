@@ -15,7 +15,7 @@ XSpeed = 0;
 
 Money = 0;
 Depth = 0;
-Health = 3;
+Health = 300;
 
 particles = function(_x, _y, _count, _particles_colors){
 	repeat(_count){
@@ -52,12 +52,14 @@ NumbersSurface = -1;
 ScannerActive = false;
 ScannerRadius = 0;
 
-Prices = [550, 200, 670, 790, 350];
+Prices = [550, 200, 670, 790, 350, 135, 440];
 
 enum EPrices{
 	Heart,
 	Scan,
 	ScanPlus,
 	Medkit,
-	Diffuser
+	Diffuser,
+	Binoculars,
+	MineDetect
 }

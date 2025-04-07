@@ -4,7 +4,7 @@ var _x = x + lengthdir_x(BS, _dir);
 var _y = y + lengthdir_y(BS, _dir);
 
 if (DigFrame % 10 != 0){
-	exit;
+	//exit;
 }
 
 var _tile = tilemap_get_at_pixel(global.BlocksLayerTilemap, _x, _y);
@@ -26,6 +26,7 @@ sprite_index = SpPlayerDigRight;
 if (_y - y >= 1){
 	sprite_index = SpPlayerDigDown;
 }
+ObAchievement.Blocks ++;
 
 switch(_tile){
 	case Ore.Emerald:
@@ -53,7 +54,7 @@ switch(_tile){
 	case Ore.Gold:
 	case Ore.Gold2:
 	case Ore.Gold3:
-		ObAchievement.Gold ++;
+		ObAchievement.Golds ++;
 		Money += 33;
 		particles(_x, _y, 7, [c_dyellow, c_lyellow, c_dblue, c_lblue]);
 	break;
@@ -84,6 +85,22 @@ switch(_tile){
 	case Ore.ShopBlock2:
 	case Ore.ShopBlock3:
 		particles(_x, _y, 8, [c_dblue, c_wcblue, c_dblue]);
+	break;
+	case Ore.Plank:
+	case Ore.Plank + 1:
+	case Ore.Plank + 2:
+		particles(_x, _y, 8, [c_plank, c_dplank, c_ddplank]);
+	break;
+	case Ore.Vase:
+	case Ore.Vase + 1:
+	case Ore.Vase + 2:
+		ObAchievement.Vases ++;
+		var _emerald_particles = [c_emerald, c_emerald2];
+		var _diamonds_particles = [c_emerald, c_emerald2, c_diamond, c_diamond2];
+		var _temp = irandom_range(10, 31);
+		Money += _temp;
+		particles(_x, _y, 8, [c_plank, c_dblue, c_ddplank]);
+		particles(_x, _y, 4, _temp <= 15 ? _emerald_particles : _diamonds_particles);
 	break;
 	default:
 		particles(_x, _y, 3, [c_dirt]);

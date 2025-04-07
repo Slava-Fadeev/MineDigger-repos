@@ -43,6 +43,18 @@ switch(Achievement){
 		draw_text_transformed(192 / 2 + 6, 15, $"golds\n{Gold}", AchievementXSize, AchievementYSize, 0);
 		draw_set_halign(fa_left);
 	break;
+	case "Vases":
+		draw_set_halign(fa_center);
+
+		draw_text_transformed(192 / 2 + 6, 15, $"vases\n{Vases}", AchievementXSize, AchievementYSize, 0);
+		draw_set_halign(fa_left);
+	break;
+	case "Blocks":
+		draw_set_halign(fa_center);
+
+		draw_text_transformed(192 / 2 + 6, 15, $"blocks\n{Blocks}", AchievementXSize, AchievementYSize, 0);
+		draw_set_halign(fa_left);
+	break;
 }
 
 shader_reset();

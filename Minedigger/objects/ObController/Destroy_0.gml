@@ -7,3 +7,6 @@ font_delete(global.FontInventory);
 font_delete(global.FontShop);
 font_delete(global.FontDeath);
 font_delete(global.Font);
+
+ds_list_destroy(global.BoimeMap);
+ds_list_destroy(global.BoimeMapBack);
