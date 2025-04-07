@@ -15,6 +15,7 @@ if (XSpeed != 0){
 }
 
 XSpeed *= 2;
+
 YSpeed += 0.2;
 YSpeed = clamp(YSpeed, -11, 7);
 
