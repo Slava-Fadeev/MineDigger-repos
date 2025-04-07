@@ -15,15 +15,15 @@ if (XSpeed != 0){
 }
 
 XSpeed *= 2;
-YSpeed += 0.1;
-YSpeed = clamp(YSpeed, -11, 99999);
+YSpeed += 0.2;
+YSpeed = clamp(YSpeed, -11, 7);
 
 if place_meeting(x, y + 1, [global.BlocksLayerTilemap, ObEndBlock]){
 	YSpeed = 0;
 }
 if place_meeting(x, y + 3, [global.BlocksLayerTilemap, ObEndBlock]){
 	if keyboard_check(vk_space){
-		YSpeed = -2;
+		YSpeed = -3;
 	}
 }
 
