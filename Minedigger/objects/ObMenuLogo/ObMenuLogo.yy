@@ -1,21 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"ObButtonDExit",
+  "%Name":"ObMenuLogo",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"ObButtonDExit",
+  "name":"ObMenuLogo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":{
-    "name":"ObButtonExit",
-    "path":"objects/ObButtonExit/ObButtonExit.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -34,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"SpDeathScreenExit",
-    "path":"sprites/SpDeathScreenExit/SpDeathScreenExit.yy",
+    "name":"SpLogo",
+    "path":"sprites/SpLogo/SpLogo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

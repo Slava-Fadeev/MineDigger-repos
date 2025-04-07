@@ -15,15 +15,16 @@ if (XSpeed != 0){
 }
 
 XSpeed *= 2;
-YSpeed += 0.5;
-YSpeed = clamp(YSpeed, -7, 8);
+
+YSpeed += 0.2;
+YSpeed = clamp(YSpeed, -11, 7);
 
 if place_meeting(x, y + 1, [global.BlocksLayerTilemap, ObEndBlock]){
 	YSpeed = 0;
 }
 if place_meeting(x, y + 3, [global.BlocksLayerTilemap, ObEndBlock]){
 	if keyboard_check(vk_space){
-		YSpeed = -5;
+		YSpeed = -3;
 	}
 }
 
@@ -33,8 +34,8 @@ if place_meeting(x, y - 1, [global.BlocksLayerTilemap, ObEndBlock]){
 	YSpeed = 1;
 }
 
-x = round(x);
-y = round(y);
+//x = round(x);
+//y = round(y);
 
 Depth = (ystart - y) div BS;
 
